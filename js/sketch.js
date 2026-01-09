@@ -4,7 +4,7 @@ let RETICULAY;
 let ancho; //altura de celda
 let alto; //anchura de celda
 
-const NA = 39; // número de azulejos
+const NA = 31; // número de azulejos
 const fileName = 'tile';
 const fileExtension = '.png';
 let reglas = [];
@@ -47,6 +47,8 @@ function resetCels() {
 	ancho = width / RETICULAX;
 	RETICULAY = int(height / ancho);
 	alto = ancho;
+
+	opcionesI = [];
 
 	for (let i = 0; i < azulejos.length; i++) {
 		opcionesI.push(i);
